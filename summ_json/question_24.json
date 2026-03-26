@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Read the below passage carefully and answer the questions with an explanation:\nAt a small company, parking spaces are reserved for the top executives: CEO, president, vice president, secretary, and treasurer with the spaces lined up in that order. The parking lot guard can tell at a glance if the cars are parked correctly by looking at the color of the cars. The cars are yellow, green, purple, red, and blue, and the executives' names are Alice, Bert, Cheryl, David, and Enid.\n* The car in the first space is red.\n* A blue car is parked between the red car and the green car.\n* The car in the last space is purple.\n* The secretary drives a yellow car.\n* Alice's car is parked next to David's.\n* Enid drives a green car.\n* Bert's car is parked between Cheryl's and Enid's.\n* David's car is parked in the last space.\nQuestion: What is the name of the secretary?"
+    },
+    {
+        "role": "assistant",
+        "content": "### 1\ufe0f\u20e3 Step\u2011by\u2011step reasoning\n\n| Clue | What it tells us |\n|------|------------------|\n| **1** | First space \u2192 red car. |\n| **2** | A blue car is adjacent to the red car and to the green car (i.e., \u201cbetween\u201d them). |\n| **3** | Last space \u2192 purple car. |\n| **5** | Alice\u2019s car is next to David\u2019s. |\n| **6** | Enid drives a green car. |\n| **8** | David\u2019s car is in the last space. |\n| **7** | Bert\u2019s car is between Cheryl\u2019s and Enid\u2019s. |\n\n1. **Position 1** is red, **Position 5** is purple.  \n2. Clue\u202f2 forces the blue car to be right next to the red car, so the blue car must occupy space\u202f2 and the green car in space\u202f3.  \n\n   So the middle three spaces are:  \n   ```\n   1: red\n   2: blue\n   3: green\n   4: ?\n   5: purple\n   ```\n\n3. Enid\u2019s car is green \u2192 Enid is in space\u202f3.  \n4. David\u2019s car is last \u2192 David is in space\u202f5.  \n5. Alice\u2019s car is next to David\u2019s \u2192 Alice must be in space\u202f4.  \n6. The secretary drives a *yellow* car \u2013 yet the remaining color in the set is yellow.  \n7. The only remaining color for space\u202f4 is yellow. Thus Alice\u2019s car (space\u202f4) is yellow.  \n\n8. \u201cBert\u2019s car is parked between Cheryl\u2019s and Enid\u2019s.\u201d  \n   - Enid is in space\u202f3.  \n   - Therefore the only position that can have a car **between** Enid (space\u202f3) and another person is space\u202f2 or 4.  \n   - Since space\u202f2 is already blue and blue is the only color left that can be between red (space\u202f1) and green (space\u202f3), the blue car cannot belong to Enid or David.  \n   - Hence space\u202f2 must be **Bert** and space\u202f4 must be **Cheryl**.  \n\nNow the lineup is fixed:\n\n| Space | Title            | Name   | Car Color |\n|-------|-----------------|--------|-----------|\n| 1     | CEO             | Cheryl | red       |\n| 2     | President       | Bert   | blue      |\n| 3     | Vice\u2011President  | Enid   | green     |\n| 4     | Secretary       | Alice  | yellow    |\n| 5     | Treasurer       | David  | purple    |\n\nThe secretary is the executive who drives the yellow car, which is Alice.\n\n---\n\n**Answer: The secretary is Alice.**"
+    },
+    {
+        "role": "user",
+        "content": "List car colors in order from last to first."
+    },
+    {
+        "role": "assistant",
+        "content": "Purple \u2192 Yellow \u2192 Green \u2192 Blue \u2192 Red"
+    }
+]

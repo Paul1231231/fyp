@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Some people got on a bus at the terminal. At the first bus stop, half of the people got down and 4 more people got in. Then at the second bus stop, 6 people got down and 8 more got in. If there were a total of 25 people heading to the third stop, how many people got on the bus at the terminal?"
+    },
+    {
+        "role": "assistant",
+        "content": "Let the number of people who boarded at the terminal be \\(x\\).\n\n1. **After the first stop**  \n   - Half get off \u2192 \\(\\frac{x}{2}\\) leave.  \n   - \\(4\\) more get on.  \n   \\[\n   \\text{Remaining} = x - \\frac{x}{2} + 4 = \\frac{x}{2} + 4\n   \\]\n\n2. **After the second stop**  \n   - \\(6\\) get off.  \n   - \\(8\\) more get on.  \n   \\[\n   \\text{Remaining} = \\left(\\frac{x}{2} + 4\\right) - 6 + 8 = \\frac{x}{2} + 6\n   \\]\n\nWe are told that after the second stop the bus has **25** people heading to the third stop:\n\\[\n\\frac{x}{2} + 6 = 25\n\\]\nSolve for \\(x\\):\n\\[\n\\frac{x}{2} = 25 - 6 = 19 \\quad\\Rightarrow\\quad x = 19 \\times 2 = 38\n\\]\n\n\\[\n\\boxed{38}\n\\]"
+    },
+    {
+        "role": "user",
+        "content": "If the ticket is $2 per person, how much is the total money earned by the bus?"
+    },
+    {
+        "role": "assistant",
+        "content": "The bus earns  \n$2 \u00d7 38 \\;=\\; \\$76$."
+    }
+]

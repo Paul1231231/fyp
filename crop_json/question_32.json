@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "In a survey conducted at a local high school, preferences for a new school color were measured: 58% of students liked the color blue, 45% preferred green, and 22% liked both colors. If we randomly pick a student from the school, what's the probability that they would like neither blue nor green?"
+    },
+    {
+        "role": "assistant",
+        "content": "Let  \n\n- \\(P(B)=0.58\\) (likes blue)  \n- \\(P(G)=0.45\\) (likes green)  \n- \\(P(B\\cap G)=0.22\\) (likes both)\n\nThe probability a student likes **either** blue or green (or both) is\n\n\\[\nP(B\\cup G)=P(B)+P(G)-P(B\\cap G)\n          =0.58+0.45-0.22\n          =0.81 .\n\\]\n\nTherefore the probability that a randomly selected student likes **neither** color is the complement:\n\n\\[\nP(\\text{neither})=1-P(B\\cup G)=1-0.81=0.19 .\n\\]\n\n**Answer:** 19\u202f% of the students would like neither blue nor green."
+    },
+    {
+        "role": "user",
+        "content": "If we select a student liked green, what's the probability that he or she would dislike both colors?"
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer:** 0\u202f% (i.e., the probability is zero).\n\n**Why?**\n\n- We know  \n\n  \\[\n  P(\\text{likes\u202fBlue}) = 0.58,\\qquad  \n  P(\\text{likes\u202fGreen}) = 0.45,\\qquad  \n  P(\\text{likes\u202fboth}) = 0.22.\n  \\]\n\n- Thus  \n\n  \\[\n  P(\\text{likes\u202fGreen}) = 0.45\n  \\]\n\n  (the event we condition on).\n\n- \u201cDislikes both colors\u201d means the student does **not** like either blue or green\u2014i.e. the student is in the complement of \\(\\{\\text{likes\u202fBlue or Green}\\}\\).\n\n- Since the student in question *does* like green, they **cannot** simultaneously dislike green. Therefore the intersection\n\n  \\[\n  P(\\text{dislikes\u202fboth colors} \\;\\wedge\\; \\text{likes\u202fgreen}) = 0 .\n  \\]\n\n- Hence  \n\n  \\[\n  P(\\text{dislikes both colors} \\mid \\text{likes green}) =\n  \\frac{P(\\text{dislikes both colors} \\;\\wedge\\; \\text{likes green})}{P(\\text{likes green})}\n  = \\frac{0}{0.45} = 0 .\n  \\]\n\nSo conditioned on a student liking green, there is zero probability that the same student dislikes both blue and green."
+    }
+]

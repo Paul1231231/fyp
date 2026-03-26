@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "In a survey conducted at a local high school, preferences for a new school color were measured: 58% of students liked the color blue, 45% preferred green, and 22% liked both colors. If we randomly pick a student from the school, what's the probability that they would like neither blue nor green?"
+    },
+    {
+        "role": "assistant",
+        "content": "The percentages are for liking at least one of the colors, so we can use the principle of inclusion\u2013exclusion.\n\nLet  \n\n- \\(B\\) = \u201clikes blue\u201d\u2003\\(P(B)=0.58\\)  \n- \\(G\\) = \u201clikes green\u201d\u2003\\(P(G)=0.45\\)  \n- \\(B\\cap G\\) = \u201clikes both\u201d\u2003\\(P(B\\cap G)=0.22\\)\n\nThe probability that a student likes **either** color is\n\n\\[\nP(B \\cup G)=P(B)+P(G)-P(B\\cap G)\n           =0.58+0.45-0.22=0.81.\n\\]\n\nHence the probability that a randomly selected student likes **neither** blue nor green is the complement of that union:\n\n\\[\nP(\\text{neither})=1-P(B\\cup G)=1-0.81=0.19.\n\\]\n\nSo, the chance that a randomly chosen student likes neither color is **19\u202f%** (or 0.19)."
+    },
+    {
+        "role": "user",
+        "content": "If we select a student liked green, what's the probability that he or she would dislike both colors?"
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer**\n\nA student who *does* like green cannot also \u201cdislike both colors.\u201d  \nIf a student has already liked green, the event \u201cdislikes blue **and** dislikes green\u201d cannot occur.  \nTherefore\n\n\\[\n\\Pr(\\text{dislikes both colors} \\mid \\text{likes green}) = 0 \\; (0\\%).\n\\]\n\nIn other words, given that the chosen student likes green, the probability that they also dislike both colors is zero."
+    }
+]

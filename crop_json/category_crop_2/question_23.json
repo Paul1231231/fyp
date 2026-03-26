@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "David has three sisters. Each of them has one brother. How many brothers does David have?"
+    },
+    {
+        "role": "assistant",
+        "content": "There are none \u2013 David has **no brothers**."
+    },
+    {
+        "role": "user",
+        "content": "If we change the previous question and assume that each sister of David has two brothers, how many brothers would David have?"
+    },
+    {
+        "role": "assistant",
+        "content": "Each sister of David has exactly two brothers.  \nThat means the entire family has\u202f**two\u202fmale children**.  \n\nDavid himself counts as one of those two brothers, leaving  \n\n\\[\n\\text{Number of brothers David has} = 2\\;(\\text{total males})-1\\;(\\text{David}) = 1.\n\\]\n\nSo David has **one brother**."
+    }
+]

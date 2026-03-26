@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Given that f(x) = 4x^3 - 9x - 14, find the value of f(2)."
+    },
+    {
+        "role": "assistant",
+        "content": "The value of the function is\n\n\\[\nf(2)=4(2)^3-9(2)-14=4(8)-18-14=32-18-14=0.\n\\]"
+    },
+    {
+        "role": "user",
+        "content": "Find x such that f(x) = 0."
+    },
+    {
+        "role": "assistant",
+        "content": "The cubic\n\n\\[\nf(x)=4x^3-9x-14\n\\]\n\nhas a rational root at \\(x=2\\) (substituting we already obtained \\(f(2)=0\\)).  \nThus \\(x-2\\) is a factor. Factoring:\n\n\\[\n4x^3-9x-14=(x-2)(4x^2+8x+7).\n\\]\n\nThe quadratic factor gives the remaining roots\n\n\\[\n4x^2+8x+7=0\\quad\\Longrightarrow\\quad x=\\frac{-8\\pm\\sqrt{64-112}}{8}\n   =-\\!1\\pm\\frac{i\\sqrt{12}}{2}\n   =-1\\pm i\\frac{\\sqrt3}{2}.\n\\]\n\nSo the only real solution of \\(f(x)=0\\) is  \n\n\\[\n\\boxed{x=2}.\n\\]"
+    }
+]

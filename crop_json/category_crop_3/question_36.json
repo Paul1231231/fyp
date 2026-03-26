@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "How many integers are in the solution of the inequality |x + 5| < 10"
+    },
+    {
+        "role": "assistant",
+        "content": "The inequality  \n\n\\[\n|x+5|<10\n\\]\n\nmeans\n\n\\[\n-10< x+5 <10 .\n\\]\n\nSubtracting 5 from each part gives\n\n\\[\n-15 < x < 5.\n\\]\n\nSo \\(x\\) must be an integer strictly greater than \\(-15\\) and strictly less than \\(5\\).\n\nThe integers in this range are\n\n\\[\n-14,-13,\\dots , -1,0,1,\\dots ,4\n\\]\n\nfrom \\(-14\\) up to \\(4\\), inclusive.\n\nThe number of integers from \\(-14\\) to \\(4\\) is  \n\n\\[\n4 - (-14) + 1 = 18 + 1 = 19.\n\\]\n\n\\[\n\\boxed{19}\n\\]"
+    },
+    {
+        "role": "user",
+        "content": "What about |x + 10| < 5"
+    },
+    {
+        "role": "assistant",
+        "content": "**Inequality**\n\n\\[\n|x+10|<5\n\\]\n\nThe absolute\u2013value inequality \\(|A|<B\\) (with \\(B>0\\)) is equivalent to \\(-B<A<B\\).  \nSo here\n\n\\[\n-5 < x+10 < 5.\n\\]\n\nSubtract \\(10\\) from each part:\n\n\\[\n-15 < x < -5.\n\\]\n\nThus the solution set in interval notation is\n\n\\[\n\\boxed{(-15,\\; -5)} .\n\\]\n\n**Integer solutions**\n\nIntegers strictly between \\(-15\\) and \\(-5\\) are:\n\n\\[\n-14,\\; -13,\\; -12,\\; -11,\\; -10,\\; -9,\\; -8,\\; -7,\\; -6.\n\\]\n\n**Number of integer solutions**\n\nThere are \\(9\\) integers in this range.\n\n---\n\n**Summary**\n\n*Solution set:* \\((-15,\\,-5)\\)  \n*Integer solutions:* \\(-14,-13,-12,-11,-10,-9,-8,-7,-6\\)  \n*Count of integers:* \\(9\\)"
+    }
+]

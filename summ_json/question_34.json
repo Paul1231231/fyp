@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Some people got on a bus at the terminal. At the first bus stop, half of the people got down and 4 more people got in. Then at the second bus stop, 6 people got down and 8 more got in. If there were a total of 25 people heading to the third stop, how many people got on the bus at the terminal?"
+    },
+    {
+        "role": "assistant",
+        "content": "Let\u2019s call the original number of people who boarded the bus **\\(x\\)**.\n\n1. **First stop**\n   * Half of the passengers get off.  \n     Remaining passengers: \\(\\displaystyle \\frac{x}{2}\\).\n   * Then 4 more people get on.  \n     New total: \\(\\displaystyle \\frac{x}{2}+4\\).\n\n2. **Second stop**\n   * 6 people get off, then 8 more get on.\n     \\[\n     \\text{After second stop}= \\left(\\frac{x}{2}+4\\right)-6+8\n     = \\frac{x}{2}+4-6+8\n     = \\frac{x}{2}+6 .\n     \\]\n\n3. After the second stop, there are 25 people heading toward the third stop:\n\n   \\[\n   \\frac{x}{2}+6 = 25.\n   \\]\n\n4. Solve for \\(x\\):\n\n   \\[\n   \\frac{x}{2} = 25-6 = 19\n   \\quad\\Longrightarrow\\quad\n   x = 38 .\n   \\]\n\n**So, 38 people originally boarded the bus at the terminal.**"
+    },
+    {
+        "role": "user",
+        "content": "If the ticket is $2 per person, how much is the total money earned by the bus?"
+    },
+    {
+        "role": "assistant",
+        "content": "The bus started with 38 passengers.  \nEach passenger paid a $2 ticket, so the total revenue is:\n\n\\[\n38 \\text{ passengers} \\times \\$2 \\text{ per ticket} = \\$76\\,.\n\\]\n\n**Answer:** The bus earns **$76** at that fare."
+    }
+]

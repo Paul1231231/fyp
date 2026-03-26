@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "x+y = 4z, x*y = 4z^2, express x-y in z"
+    },
+    {
+        "role": "assistant",
+        "content": "From the system we can solve for \\(x\\) and \\(y\\) and then find \\(x-y\\):\n\n---\n\n### 1. Treat  \\(x\\) and \\(y\\) as the two roots of a quadratic\n\nThe two numbers \\(x\\) and \\(y\\) satisfy  \n\n\\[\nx+y = 4z,\\qquad xy = 4z^{2}.\n\\]\n\nThus \\(x\\) and \\(y\\) are the two roots of the quadratic equation\n\n\\[\nt^2-(x+y)t+xy=0 \\;\\Longrightarrow\\; t^2-4zt+4z^{2}=0 .\n\\]\n\n### 2. Solve the quadratic\n\n\\[\nt^2-4zt+4z^2=0\n\\]\n\n\\[\n\\Delta = (4z)^2-4(1)(4z^{2}) = 16z^{2}-16z^{2}=0.\n\\]\n\nHence the discriminant is zero, so the quadratic has a **double root**:\n\n\\[\nt = \\frac{4z\\pm0}{2} = 2z .\n\\]\n\nTherefore the two roots are both \\(2z\\), i.e.  \n\n\\[\nx = 2z,\\qquad y = 2z .\n\\]\n\n### 3. Compute \\(x-y\\)\n\n\\[\nx-y = 2z-2z = 0.\n\\]\n\n---\n\n\\[\n\\boxed{\\,x-y = 0\\,}\n\\]"
+    },
+    {
+        "role": "user",
+        "content": "Express z-x in y"
+    },
+    {
+        "role": "assistant",
+        "content": "**In terms of\u202f\\(y\\)**  \n\nFrom the two given equations we found that the two numbers \\(x\\) and \\(y\\) are equal to \\(2z\\):\n\\[\nx=y=2z\\quad\\Longrightarrow\\quad z=\\frac{x}{2}=\\frac{y}{2}.\n\\]\n\nTherefore,\n\\[\nz-x = z - 2z = -\\,z.\n\\]\n\nSince \\(z=\\frac{y}{2}\\), we get\n\\[\nz-x \\;=\\; -\\,\\frac{y}{2}.\n\\]\n\nSo the quantity \\(z-x\\) expressed solely in terms of \\(y\\) is  \n\n\\[\n\\boxed{\\,z-x = -\\dfrac{y}{2}\\,}.\n\\]"
+    }
+]

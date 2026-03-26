@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "A tech startup invests $8000 in software development in the first year, and then invests half of that amount in software development in the second year.\nWhat's the total amount the startup invested in software development over the two years?"
+    },
+    {
+        "role": "assistant",
+        "content": "The startup spends \\$8,000 in the first year.  \nIn the second year it spends half of that amount:  \n\n\\[\n\\frac{1}{2}\\times \\$8,000 = \\$4,000\n\\]\n\nSo, the total investment over the two years is  \n\n\\[\n\\$8,000 + \\$4,000 = \\$12,000\n\\]"
+    },
+    {
+        "role": "user",
+        "content": "If the startup maintains the same strategy for the third year, investing half of the previous year's amount into software development, how much will they invest in the third year?"
+    },
+    {
+        "role": "assistant",
+        "content": "They would invest **$2,000** in the third year.\n\n**Why**  \n- 1st year: $8,000  \n- 2nd year: \u00bd\u202f\u00d7\u202f$8,000 = $4,000  \n- 3rd year: \u00bd\u202f\u00d7\u202f$4,000 = $2,000"
+    }
+]

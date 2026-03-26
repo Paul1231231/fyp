@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Read the below passage carefully and answer the questions with an explanation:\nAt a small company, parking spaces are reserved for the top executives: CEO, president, vice president, secretary, and treasurer with the spaces lined up in that order. The parking lot guard can tell at a glance if the cars are parked correctly by looking at the color of the cars. The cars are yellow, green, purple, red, and blue, and the executives' names are Alice, Bert, Cheryl, David, and Enid.\n* The car in the first space is red.\n* A blue car is parked between the red car and the green car.\n* The car in the last space is purple.\n* The secretary drives a yellow car.\n* Alice's car is parked next to David's.\n* Enid drives a green car.\n* Bert's car is parked between Cheryl's and Enid's.\n* David's car is parked in the last space.\nQuestion: What is the name of the secretary?"
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer: The secretary is Alice.**\n\n**Explanation**\n\n| Position | Title          | Color | Executive |\n|----------|----------------|-------|-----------|\n| 1        | CEO            | Red   | Cheryl    |\n| 2        | President      | Blue  | Bert      |\n| 3        | Vice\u2011President | Green | Enid      |\n| 4        | Secretary      | Yellow| **Alice** |\n| 5        | Treasurer      | Purple| David     |\n\n**Step\u2011by\u2011step reasoning**\n\n1. **Position order is fixed**:  \n   1\u202f=\u202fCEO, 2\u202f=\u202fPresident, 3\u202f=\u202fVice\u2011President, 4\u202f=\u202fSecretary, 5\u202f=\u202fTreasurer.\n\n2. **Color constraints**  \n   - First space (CEO) is **red**.  \n   - Last space (Treasurer) is **purple**.  \n   - Secretary (4th space) must drive a **yellow** car.\n\n3. **Blue car between red and green**  \n   With red at position\u202f1, the only possible place for blue is position\u202f2.  \n   Then green must be immediately next to blue, so it occupies position\u202f3.\n\n4. **Enid drives green** \u2192 Enid is the VP at position\u202f3.\n\n5. **David\u2019s car is last** \u21d2 David is the Treasurer at position\u202f5 (purple).\n\n6. **Alice next to David** \u2192 Alice must be in position\u202f4 (the only spot adjacent to the 5th).\n\n7. **Bert\u2019s car between Cheryl\u2019s and Enid\u2019s**  \n   Enid is at position\u202f3, so the only way for \u201cbetween\u201d to hold is:  \n   Cheryl at position\u202f1, Bert at position\u202f2, Enid at position\u202f3.\n\n8. All constraints are satisfied, leaving the secretary\u2019s name as **Alice**."
+    },
+    {
+        "role": "user",
+        "content": "List car colors in order from last to first."
+    },
+    {
+        "role": "assistant",
+        "content": "Purple, Yellow, Green, Blue, Red"
+    }
+]

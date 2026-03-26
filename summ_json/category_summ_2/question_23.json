@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "David has three sisters. Each of them has one brother. How many brothers does David have?"
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer: 0**\n\n**Explanation:**  \nThe riddle says:  \n- David has three sisters.  \n- Each of those sisters has one brother.\n\nThe boy that is the brother of those three sisters is David himself. The \u201cone brother\u201d is David.  \nSince David is the only son in the family, he has no other brothers. Therefore, David has **zero** brothers."
+    },
+    {
+        "role": "user",
+        "content": "If we change the previous question and assume that each sister of David has two brothers, how many brothers would David have?"
+    },
+    {
+        "role": "assistant",
+        "content": "David would have **one** brother.  \n\nThe two brothers that each sister shares are the same two people\u2014David and that other brother\u2014so David is still one of the two brothers."
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "When a number is divided by 10, the remainder is 4. What is the remainder when twice the number is divided by 4?"
+    },
+    {
+        "role": "assistant",
+        "content": "Let the unknown integer be \\(N\\).  \nThe problem tells us that dividing \\(N\\) by \\(10\\) leaves a remainder of \\(4\\).  \nSo\n\n\\[\nN \\equiv 4 \\pmod{10}.\n\\]\n\nWe want to know the remainder when \\(2N\\) is divided by \\(4\\).\n\n---\n\n### Step 1 \u2013 Express \\(N\\) in a convenient form  \nBecause \\(N\\equiv 4 \\pmod{10}\\), we can write\n\n\\[\nN = 10k + 4 \\quad \\text{for some integer } k.\n\\]\n\n### Step 2 \u2013 Compute \\(2N\\)  \n\\[\n2N = 2(10k + 4) = 20k + 8.\n\\]\n\n### Step 3 \u2013 Reduce \\(2N\\) modulo \\(4\\)  \nWe need \\(2N \\pmod{4}\\).\n\n\\[\n20k + 8 \\equiv (20k \\bmod 4) + (8 \\bmod 4).\n\\]\n\n- \\(20k\\) is divisible by \\(4\\) (since \\(20 = 4 \\times 5\\)), so \\(20k \\equiv 0 \\pmod{4}\\).\n- \\(8 \\bmod 4 = 0\\).\n\nHence\n\n\\[\n20k + 8 \\equiv 0 + 0 \\equiv 0 \\pmod{4}.\n\\]\n\nSo the remainder when \\(2N\\) is divided by \\(4\\) is **0**.\n\n---\n\n**Answer: \\(0\\)** (the remainder is 0)."
+    },
+    {
+        "role": "user",
+        "content": "What about when twice the number is divided by 5?"
+    },
+    {
+        "role": "assistant",
+        "content": "Let\u2019s check the remainder when the double of that number is divided by\u202f5.\n\n---\n\n### 1.  Express the original number  \nWe know the original number \\(N\\) satisfies\n\n\\[\nN \\equiv 4 \\pmod{10}.\n\\]\n\nSo we can write\n\n\\[\nN = 10k + 4 \\qquad (k\\in\\mathbb{Z}).\n\\]\n\n---\n\n### 2.  Double the number  \n\\[\n2N = 2(10k+4)=20k+8.\n\\]\n\n---\n\n### 3.  Reduce modulo\u202f5  \nWe want \\(2N \\bmod 5\\):\n\n\\[\n2N \\equiv 20k+8 \\pmod{5}.\n\\]\n\n- \\(20k\\) is a multiple of 5, so \\(20k \\equiv 0 \\pmod{5}\\).\n- We only need to reduce the remaining \\(8\\) modulo\u202f5:  \n  \\(8 \\equiv 3 \\pmod{5}\\).\n\nThus\n\n\\[\n2N \\equiv 0 + 8 \\equiv 8 \\equiv 3 \\pmod{5}.\n\\]\n\n---\n\n### 4.  Conclusion  \n\nThe remainder when the double of the original number is divided by\u202f5 is **3**.\n\nIn other words, **\\( (2N) \\% 5 = 3\\).**"
+    }
+]

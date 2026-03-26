@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "How many integers are in the solution of the inequality |x + 5| < 10"
+    },
+    {
+        "role": "assistant",
+        "content": "The inequality  \n\n\\[\n|x+5| < 10\n\\]\n\nmeans  \n\\[\n-10 < x+5 < 10.\n\\]\n\nSubtracting 5 from each part gives  \n\n\\[\n-15 < x < 5.\n\\]\n\nSo \\(x\\) must be an integer strictly between \\(-15\\) and \\(5\\).\n\nThe integers that satisfy this are  \n\n\\[\n-14,\\,-13,\\,-12,\\,-11,\\,-10,\\,-9,\\,-8,\\,-7,\\,-6,\\,-5,\\,-4,\\,-3,\\,-2,\\,-1,\\,0,\\,1,\\,2,\\,3,\\,4.\n\\]\n\nThat is \\(19\\) numbers.  \n\n\\[\n\\boxed{19}\n\\]"
+    },
+    {
+        "role": "user",
+        "content": "What about |x + 10| < 5"
+    },
+    {
+        "role": "assistant",
+        "content": "To solve  \n\n\\[\n|x+10|<5\n\\]\n\nfollow the same steps we used before:\n\n1. **Rewrite the absolute\u2011value inequality as a compound inequality**  \n   \\[\n   |x+10|<5 \\;\\Longrightarrow\\; -5 < x+10 < 5.\n   \\]\n\n2. **Subtract 10 from every part**  \n   \\[\n   -5-10 < x < 5-10 \\quad\\Longrightarrow\\quad -15 < x < -5.\n   \\]\n\nSo any real number \\(x\\) that lies strictly between \\(-15\\) and \\(-5\\) satisfies the inequality.\n\n---\n\n### Solution set\n\\[\n\\boxed{\\,x \\in (-15,\\,-5)\\,}\n\\]\n\n---\n\n### If you want the integer solutions\n\nThe integers strictly between \\(-15\\) and \\(-5\\) are\n\\[\n-14,\\,-13,\\,-12,\\,-11,\\,-10,\\,-9,\\,-8,\\,-7,\\,-6.\n\\]\n\nThere are **9** such integers."
+    }
+]

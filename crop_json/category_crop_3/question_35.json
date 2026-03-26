@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "x+y = 4z, x*y = 4z^2, express x-y in z"
+    },
+    {
+        "role": "assistant",
+        "content": "From the two equations\n\n\\[\nx+y=4z,\\qquad xy=4z^2\n\\]\n\nconsider the quadratic whose roots are \\(x\\) and \\(y\\):\n\n\\[\nt^2 -(x+y)t+xy=0 \\quad\\Longrightarrow\\quad \nt^2-4zt+4z^2=0 .\n\\]\n\nThe discriminant of this quadratic is  \n\n\\[\n\\Delta=(4z)^2-4\\cdot1\\cdot4z^2=16z^2-16z^2=0 .\n\\]\n\nSo both roots are equal:\n\n\\[\nt=\\frac{4z\\pm\\sqrt{0}}{2}=2z .\n\\]\n\nHence \\(x=y=2z\\). Therefore\n\n\\[\nx-y=0 .\n\\]\n\n(One can also see this immediately from \\((x-y)^2=(x+y)^2-4xy=0\\).)"
+    },
+    {
+        "role": "user",
+        "content": "Express z-x in y"
+    },
+    {
+        "role": "assistant",
+        "content": "From the two equations\n\n\\[\nx+y = 4z, \\qquad xy = 4z^{2},\n\\]\n\nsubstitute \\(z = \\dfrac{x+y}{4}\\) into the second equation:\n\n\\[\nxy = 4\\left(\\frac{x+y}{4}\\right)^{2}\n      = \\frac{(x+y)^{2}}{4}.\n\\]\n\nMultiply by \\(4\\):\n\n\\[\n4xy = (x+y)^{2} = x^{2} + 2xy + y^{2}.\n\\]\n\nMove all terms to one side:\n\n\\[\nx^{2} - 2xy + y^{2} = 0\n\\;\\;\\Longrightarrow\\;\\;\n(x-y)^{2}=0,\n\\]\n\nhence \\(x = y\\).\n\nNow plug \\(x=y\\) into \\(x+y = 4z\\):\n\n\\[\n2x = 4z \\;\\;\\Longrightarrow\\;\\; z = \\frac{x}{2} = \\frac{y}{2}.\n\\]\n\nFinally\n\n\\[\nz - x = \\frac{y}{2} - y = -\\frac{y}{2}.\n\\]\n\n\\[\n\\boxed{\\,z - x = -\\dfrac{y}{2}\\,}\n\\]"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Which word does not belong with the others?\ntyre, steering wheel, car, engine"
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer: \u201ccar.\u201d**\n\nAll the other terms\u2014tyre, steering wheel, and engine\u2014are *parts* of a vehicle.  \n\u201cCar\u201d is the whole vehicle itself, so it stands out as the one that doesn't fit the category."
+    },
+    {
+        "role": "user",
+        "content": "Could you replace it with a word that belongs with the others?"
+    },
+    {
+        "role": "assistant",
+        "content": "**Replacement:**  \n**transmission**  \n\nSo the set becomes: *tyre, steering wheel, engine, transmission* \u2013 all of which are distinct parts of a car."
+    }
+]

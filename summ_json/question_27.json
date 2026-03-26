@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Which word does not belong with the others?\ntyre, steering wheel, car, engine"
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer:** **car**\n\n**Why:**  \n- *tyre*, *steering wheel*, and *engine* are all **parts of a car**.  \n- *car* itself is the whole vehicle, not an individual part.\n\nThus \u201ccar\u201d does not belong with the other three words."
+    },
+    {
+        "role": "user",
+        "content": "Could you replace it with a word that belongs with the others?"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure! Since the three items in the list \u2014 **tyre, steering wheel,** and **engine** \u2014 are all **parts of a car**, the odd one out is the word *car* itself, which is the whole vehicle, not a part.  \n\nYou can replace **car** with another car part that fits the group. A good choice is **\u201cdoor.\u201d** \u201cDoor\u201d is a part of a car, just like a tyre, a steering wheel, and an engine."
+    }
+]

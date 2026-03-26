@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Given that f(x) = 4x^3 - 9x - 14, find the value of f(2)."
+    },
+    {
+        "role": "assistant",
+        "content": "Plug \\(x=2\\) into the function:\n\n\\[\n\\begin{aligned}\nf(2) &= 4(2)^3 - 9(2) - 14 \\\\[4pt]\n     &= 4 \\cdot 8 \\;-\\; 18 \\;-\\; 14 \\\\[4pt]\n     &= 32 \\;-\\; 32 \\\\[4pt]\n     &= 0\n\\end{aligned}\n\\]\n\nSo, \\(f(2) = \\boxed{0}\\)."
+    },
+    {
+        "role": "user",
+        "content": "Find x such that f(x) = 0."
+    },
+    {
+        "role": "assistant",
+        "content": "**Solution \u2013\u202f\\(f(x)=4x^{3}-9x-14=0\\)**  \n\n1. **Rational\u2011root test**  \n   Possible rational zeros are  \n   \\[\n   \\pm1,\\;\\pm2,\\;\\pm7,\\;\\pm14,\\;\\pm \\tfrac12,\\;\\pm \\tfrac{7}{2}\n   \\]\n   (each factor of the constant \\(14\\) divided by each factor of the leading coefficient \\(4\\)).  \n   Testing \\(x=2\\) quickly gives  \n   \\[\n   f(2)=4(2)^3-9(2)-14=32-18-14=0,\n   \\]\n   so \\(x=2\\) is a root.\n\n2. **Factor out \\((x-2)\\)**  \n\n   Divide the cubic by \\((x-2)\\) (synthetic division):\n\n   \\[\n   \\begin{array}{r|rrrr}\n   2 & 4 & 0 & -9 & -14\\\\\n     &   & 8 & 16 &  14\\\\ \\hline\n     & 4 & 8 &  7 &  0\n   \\end{array}\n   \\]\n\n   The quotient is \\(4x^{2}+8x+7\\).  \n   Therefore\n   \\[\n   4x^{3}-9x-14=(x-2)(4x^{2}+8x+7).\n   \\]\n\n3. **Solve the remaining quadratic**\n\n   \\[\n   4x^{2}+8x+7=0 \\quad\\Longrightarrow\\quad\n   x=\\frac{-8\\pm\\sqrt{8^{2}-4\\cdot4\\cdot7}}{2\\cdot4}\n   =\\frac{-8\\pm\\sqrt{-48}}{8}\n   =-1\\pm\\frac{i\\sqrt{48}}{8}\n   =-1\\pm\\frac{i\\,4\\sqrt3}{8}\n   =-1\\pm i\\,\\frac{\\sqrt3}{2}.\n   \\]\n\n4. **All zeros**\n\n   \\[\n   \\boxed{\\,x_1=2,\\qquad\n          x_{2}=-1+\\frac{i\\sqrt3}{2},\\qquad\n          x_{3}=-1-\\frac{i\\sqrt3}{2}\\,}\n   \\]\n\n   Only one real root exists (\\(x=2\\)); the other two are complex conjugates.\n\n---\n\n### Quick check (optional)\n\nEvaluate the quadratic at the complex roots (or use the fact that they come from a quadratic with real coefficients; they are conjugates). Both give zero, confirming the factorization.\n\n> **Answer**: The function \\(f(x)=4x^3-9x-14\\) vanishes at \\(x=2\\); the two other (complex) zeros are \\(-1 \\pm i\\,\\frac{\\sqrt3}{2}\\)."
+    }
+]

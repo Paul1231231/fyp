@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "When a number is divided by 10, the remainder is 4. What is the remainder when twice the number is divided by 4?"
+    },
+    {
+        "role": "assistant",
+        "content": "Let the number be \\(n\\).  \nGiven \\(n\\) leaves a remainder of 4 when divided by 10, we can write\n\n\\[\nn = 10k + 4,\\qquad k\\in\\mathbb Z.\n\\]\n\nNow consider twice the number:\n\n\\[\n2n = 2(10k + 4) = 20k + 8.\n\\]\n\nFactor out 4:\n\n\\[\n2n = 4(5k + 2).\n\\]\n\nSince \\(2n\\) is an integer multiple of 4, its remainder when divided by 4 is **0**.\n\n\\[\n\\boxed{0}\n\\]"
+    },
+    {
+        "role": "user",
+        "content": "What about when twice the number is divided by 5?"
+    },
+    {
+        "role": "assistant",
+        "content": "Let  \n\n\\[\nn = 10k + 4,\\quad k\\in\\mathbb Z\n\\]\n\nbecause when \\(n\\) is divided by \\(10\\) the remainder is \\(4\\).\n\nNow double the number:\n\n\\[\n2n = 2(10k + 4)=20k + 8.\n\\]\n\nWe need the remainder of \\(2n\\) upon division by \\(5\\).  \nSince \\(20k\\) is a multiple of \\(5\\) (because \\(20\\equiv0\\pmod5\\)), it contributes no remainder.  \n\n\\[\n2n \\equiv 8 \\pmod{5}.\n\\]\n\nFinally, \\(8 \\equiv 3 \\pmod{5}\\) (because \\(8 = 5 + 3\\)).\n\n\\[\n\\boxed{3}\n\\]"
+    }
+]

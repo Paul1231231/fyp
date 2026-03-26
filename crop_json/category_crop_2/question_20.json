@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Imagine you are participating in a race with a group of people. If you have just overtaken the second person, what's your current position? Where is the person you just overtook?"
+    },
+    {
+        "role": "assistant",
+        "content": "You\u2019ve moved up to **second place**.  \nThe person you just passed was **in second place before you overtook them**, so now they\u2019re **one spot lower** \u2013 i.e. **third place** (assuming no other riders jumped in front of them during the pass)."
+    },
+    {
+        "role": "user",
+        "content": "If the \"second person\" is changed to \"last person\" in the above question, what would the answer be?"
+    },
+    {
+        "role": "assistant",
+        "content": "If you \"pass\" whoever is last, nothing changes \u2013 you stay where you are and that person stays last."
+    }
+]

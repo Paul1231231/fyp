@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "One morning after sunrise, Suresh was standing facing a pole. The shadow of the pole fell exactly to his right. Can you tell me the direction towards which the shadow was pointing - east, south, west, or north? Explain your reasoning steps."
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer:** The shadow was pointing to the **west**.\n\n---\n\n### Why West?\n\n| Step | Explanation |\n|------|-------------|\n| 1 | **Sunrise direction** \u2013 The Sun rises in the east. At the very first light of the day it appears on the eastern horizon. |\n| 2 | **Shade direction** \u2013 A shadow is cast opposite the direction from which the light comes. If the Sun is in the east, the rays hit the pole from the east side and the shadow will fall to the west side of the pole. |\n| 3 | **Shadow on the ground** \u2013 The shadow is the projection of the pole on the ground. The Sun\u2019s rays travel from sun to pole and then to the ground. The shadow appears on the side of the pole that is opposite the Sun\u2019s direction, i.e., west of the pole. |\n| 4 | **\u201cRight\u201d of Suresh** \u2013 If the shadow falls exactly to his right, the Sun must be on his left. When the Sun is in the east, the left of the observer is west. So the shadow on the right side of the pole points westward. |\n\nThus the shadow was pointing west."
+    },
+    {
+        "role": "user",
+        "content": "To which direction was Suresh facing? How do you solve this?"
+    },
+    {
+        "role": "assistant",
+        "content": "**Answer**\n\nSuresh was standing **facing east** (toward the sunrise).\n\n---\n\n### How we solve it  \n\n1. **Shadow direction**  \n   - In the question the shadow of the pole falls **to the west**.  \n   - The shadow always falls on the side opposite the sun (the sun \u201ccomes\u201d from the east, so the shadow points toward the west).\n\n2. **Shadow on his right side**  \n   - The shadow being on his right means that, from his viewpoint, the west side is his right-hand side.  \n   - For the west side (shadow) to be a right\u2011hand side, he must be looking toward the east (i.e., he is facing east).  \n     - If he faced north, the west would be left of him.  \n     - If he faced south, the west would be left of him as well.  \n     - Facing east, his right side corresponds to the west.\n\n3. **Direction of sun**  \n   - At sunrise the sun is east of the observer.  \n   - Therefore the sun\u2019s rays are shining from east to west, casting a shaded area to the west of the pole.\n\nSo, Suresh was facing **east**\u2014toward the rising sun."
+    }
+]
